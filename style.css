@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+  }
+  .container{
+    width: 60%;
+    height: 80%;
+   
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    padding:40px;
+    backdrop-filter: blur(.25rem);
+  }
+  .tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    font-size: 20px;
+  }
+  
+  
+  .temperature-icon{
+    font-size: 70px;
+    color: grey;
+  }
+  h1{
+    color: grey;
+    letter-spacing: 1.5px;
+  }
+  #celsius,#fahrenheit,#kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #celsius{
+    margin-top: 70px;
+  }
+  input{
+    flex: 5;
+    width: 90%;
+    height: 70px;
+    font-size: 30px;
+    font-weight: 600px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0px 0px 8px ;
+    padding: 0 10px ;
+    background: transparent;
+    border: 2px solid grey;
+  }
+  
+   input::-webkit-outer-spin-button,
+   input ::-webkit-inner-spin-button{
+     -webkit-appearance: none;
+   }
+  
+  
+  .icon{
+    flex: 1;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 35px;
+    background: dimgrey;
+    color: floralwhite;
+    border-radius: 0 8px 8px 0;
+    
+  }
+  .button{
+    margin-top: 60px;
+    text-align: center;
+  }
+  .button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 35px;
+    color: dimgrey;
+    cursor: pointer;
+    transition: 0.35;
+  }
+  .button button:hover{
+    background: dimgray;
+    color: white;
+  }
+
+  @media (max-width =300){
+    .container{
+        display: flex;
+        width: auto;
+        height: auto;
+
+
+    } 
+    input{
+        width: 100%;
+        height: auto;
+
+    }
+    
+  }
